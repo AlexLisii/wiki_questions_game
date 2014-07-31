@@ -35,7 +35,7 @@ def get_text():
         sys.exit('The article for %s not found. Try another word.' % secret)
 
     # replace the secret word with ???
-    question = re.sub(ur'(?i)%r[A-Za-z]{0,3}[\s\"\.,:;!?\']' % secret[:-1], '?'*len(secret) + ' ', question, re.UNICODE)
+    question = re.sub(ur'(?i)%r[A-Za-z]{0,3}[\s\"\.,:;!?\']' % secret[:-1], '???' + ' ', question, re.UNICODE)
     # remove text in square brackets, i.e. links numbers
     question = re.sub(ur'\[[A-Za-z0-9 ]*\]', '', question, re.UNICODE)
     # remove text in parentheses, i.e. pronunciation or latin names for subjects
