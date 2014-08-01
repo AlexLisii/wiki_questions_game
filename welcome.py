@@ -2,7 +2,7 @@ import random
 import sys
 
 def math():
-    print 'Lets start with some math'
+    print 'Lets start with some math.'
     num1 = random.randint(10, 100)
     num2 = random.randint(10, 100)
     print 'How much is %d + %d' % (num1, num2)
